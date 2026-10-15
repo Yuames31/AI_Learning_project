@@ -31,7 +31,7 @@ class RagService(object):
             ]
         )
 
-        self.chat_model = ChatTongyi(model=config.chat_model_name)
+        self.chat_model = ChatTongyi(model=config.chat_model_name,streaming=True)
 
         self.chain = self.__get_chain()
 
